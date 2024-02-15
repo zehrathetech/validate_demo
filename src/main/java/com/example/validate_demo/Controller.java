@@ -9,7 +9,7 @@ public class Controller {
     public String validateUserData(@RequestBody dataModel userData)
     {
         if (userData == null || userData.getMarks() == null || userData.getMarks() <= 0) {
-            return "Invalid data. Please provide a valid age.";
+            return "Invalid data. Please provide a valid age .";
         } else {
             return "Valid age entered: " + userData.getMarks();
         }
